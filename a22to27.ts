@@ -12,36 +12,36 @@
 
 //• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
 
-let x = 5;
-let y = 10;
+let x:number = 5;
+let y: number  = 10;
 
 // Test 1: Check if x is equal to 5
-console.log("Is x == 5? I predict True.");
-console.log(x == 5); // Prediction: True
+console.log("Is x == 5? I predict true.");
+console.log(x == 5); // Prediction: true
 
 // Test 2: Check if y is equal to 15
-console.log("Is y == 15? I predict False.");
-console.log(y == 15); // Prediction: False
+console.log("Is y == 15? I predict false.");
+console.log(y == 15); // Prediction: false
 
 // Test 3: Check if x is greater than y
-console.log("Is x > y? I predict False.");
-console.log(x > y); // Prediction: False
+console.log("Is x > y? I predict false.");
+console.log(x > y); // Prediction: false
 
 // Test 4: Check if y is less than or equal to 10
-console.log("Is y <= 10? I predict True.");
-console.log(y <= 10); // Prediction: True
+console.log("Is y <= 10? I predict true.");
+console.log(y <= 10); // Prediction: true
 
 // Test 5: Check if x is not equal to 6
-console.log("Is x != 6? I predict True.");
-console.log(x != 6); // Prediction: True
+console.log("Is x != 6? I predict true.");
+console.log(x != 6); // Prediction: true
 
 // Test 6: Check if y is not equal to '10' (using strict equality operator)
-console.log("Is y === '10'? I predict False.");
-console.log(y === '10'); // Prediction: False
+console.log("Is y === '10'? I predict true.");
+console.log(y === 10); // Prediction: true
 
 // Test 7: Check if x is less than y
-console.log("Is x < y? I predict True.");
-console.log(x < y); // Prediction: True
+console.log("Is x < y? I predict true.");
+console.log(x < y); // Prediction: true
 
 // Test 8: Check if y is greater than 5
 console.log("Is y > 5? I predict True.");
@@ -49,7 +49,7 @@ console.log(y > 5); // Prediction: True
 
 // Test 9: Check if x is equal to '5' (using loose equality operator)
 console.log("Is x == '5'? I predict True.");
-console.log(x == '5'); // Prediction: True
+console.log(x == 5); // Prediction: True
 
 // Test 10: Check if y is not equal to 10
 console.log("Is y != 10? I predict False.");
@@ -72,57 +72,57 @@ console.log(y != 10); // Prediction: False
 
 
 // Tests for equality and inequality with strings
-let flower1 = 'rose';
-let flower2 = 'lily';
+let flower1 : string = 'rose';
+let flower2 : string =  'lily';
 
-console.log("Is flower1 equal to 'rose'? I predict True.");
-console.log(flower1 == 'rose'); // Prediction: True
+console.log("Is flower1 equal to 'rose'? I predict true.");
+console.log(flower1 == 'rose'); // Prediction: true
 
-console.log("Is flower2 not equal to 'sunflower'? I predict True.");
-console.log(flower2 != 'sunflower'); // Prediction: True
+console.log("Is flower2 not equal to 'sunflower'? I predict true.");
+console.log(flower2 != 'sunflower'); // Prediction: true
 
 // Tests using the lower case function
-let flowerName1 = 'ROSE';
-let flowerName2 = 'lily';
+let flowerName1 : string = 'ROSE';
+let flowerName2 : string = 'lily';
 
-console.log("Is flowerName1 lowercase equal to flowerName2 lowercase? I predict True.");
-console.log(flowerName1.toLowerCase() == flowerName2.toLowerCase()); // Prediction: True
+console.log("Is flowerName1 lowercase equal to flowerName2 lowercase? I predict true.");
+console.log(flowerName1.toLowerCase() == flowerName2.toLowerCase()); // Prediction: true
 
 // Numerical tests
 let price1 = 10;
 let price2 = 20;
 
-console.log("Is price1 equal to 10? I predict True.");
-console.log(price1 == 10); // Prediction: True
+console.log("Is price1 equal to 10? I predict true.");
+console.log(price1 == 10); // Prediction: true
 
-console.log("Is price2 greater than 10? I predict True.");
-console.log(price2 > 10); // Prediction: True
+console.log("Is price2 greater than 10? I predict true.");
+console.log(price2 > 10); // Prediction: true
 
-console.log("Is price1 less than or equal to 20? I predict True.");
-console.log(price1 <= 20); // Prediction: True
+console.log("Is price1 less than or equal to 20? I predict true.");
+console.log(price1 <= 20); // Prediction: true
 
-console.log("Is price2 not equal to 20? I predict False.");
-console.log(price2 != 20); // Prediction: False
+console.log("Is price2 not equal to 20? I predict false.");
+console.log(price2 != 20); // Prediction: false
 
 // Tests using "and" and "or" operators
-let hasPollen = true;
-let hasFragrance = false;
+let hasPollen : boolean = true;
+let hasFragrance : boolean =  false;
 
-console.log("Does the flower have pollen and no fragrance? I predict True.");
-console.log(hasPollen && !hasFragrance); // Prediction: True
+console.log("Does the flower have pollen and no fragrance? I predict true.");
+console.log(hasPollen && !hasFragrance); // Prediction: true
 
-console.log("Is it either has pollen or has fragrance? I predict True.");
-console.log(hasPollen || hasFragrance); // Prediction: True
+console.log("Is it either has pollen or has fragrance? I predict true.");
+console.log(hasPollen || hasFragrance); // Prediction: true
 
 // Test whether a flower is in an array
 let flowerArray = ['rose', 'lily', 'tulip'];
 
-console.log("Is 'tulip' in the flower array? I predict True.");
-console.log(flowerArray.includes('tulip')); // Prediction: True
+console.log("Is 'tulip' in the flower array? I predict true.");
+console.log(flowerArray.includes('tulip')); // Prediction: true
 
 // Test whether a flower is not in an array
-console.log("Is 'orchid' not in the flower array? I predict True.");
-console.log(!flowerArray.includes('orchid')); // Prediction: True
+console.log("Is 'orchid' not in the flower array? I predict true.");
+console.log(!flowerArray.includes('orchid')); // Prediction: true
 
 
 //25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a
@@ -135,18 +135,18 @@ console.log(!flowerArray.includes('orchid')); // Prediction: True
 //fails. (The version that fails will have no output.)
 
 
-let alien_color: string = 'green';
+let alienColor: string = 'green';
 
 // Check if the alien's color is green
-if (alien_color == 'green') {
+if (alienColor == 'green') {
     console.log("Congratulations! You just earned 5 points.");
 }
 
 
-let alien_color: string = 'red';
+let alien_color0: string = 'red';
 
 // Check if the alien's color is green
-if (alien_color == 'green') {
+if (alien_color0== 'green') {
     console.log("Congratulations! You just earned 5 points.");
 }
 
@@ -161,19 +161,19 @@ if (alien_color == 'green') {
 //• Write one version of this program that runs the if block and another that runs the else block.
 
 
-let alien_color: string = 'green';
+let alien_color1: string = 'green';
 
 // Check if the alien's color is green
-if (alien_color == 'green') {
+if (alien_color1== 'green') {
     console.log("Congratulations! You just earned 5 points for shooting the alien.");
 } else {
     console.log("Congratulations! You just earned 10 points.");
 }
 
-let alien_color: string = 'red';
+let alien_color2: string = 'red';
 
 // Check if the alien's color is green
-if (alien_color == 'green') {
+if (alien_color2== 'green') {
     console.log("Congratulations! You just earned 5 points for shooting the alien.");
 } else {
     console.log("Congratulations! You just earned 10 points.");
@@ -190,50 +190,36 @@ if (alien_color == 'green') {
 //• Write three versions of this program, making sure each message is printed for the appropriate color alien.
 
 
-let alien_color: string = 'green';
+let alien_color3: string = 'green';
 
 // Check the color of the alien and print the corresponding message
-if (alien_color == 'green') {
+if (alien_color3 == 'green') {
     console.log("Congratulations! You just earned 5 points.");
-} else if (alien_color == 'yellow') {
+} else if (alien_color3 == 'yellow') {
     console.log("Congratulations! You just earned 10 points.");
-} else if (alien_color == 'red') {
+} else if (alien_color3 == 'red') {
     console.log("Congratulations! You just earned 15 points.");
 }
 
-let alien_color: string = 'yellow';
+let alien_color5: string = 'yellow';
 
 // Check the color of the alien and print the corresponding message
-if (alien_color == 'green') {
+if (alien_color5== 'green') {
     console.log("Congratulations! You just earned 5 points.");
-} else if (alien_color == 'yellow') {
+} else if (alien_color5== 'yellow') {
     console.log("Congratulations! You just earned 10 points.");
-} else if (alien_color == 'red') {
+} else if (alien_color5 == 'red') {
     console.log("Congratulations! You just earned 15 points.");
 }
 
 
-let alien_color: string = 'red';
+let alien_color6: string = 'red';
 
 // Check the color of the alien and print the corresponding message
-if (alien_color == 'green') {
+if (alien_color6 == 'green') {
     console.log("Congratulations! You just earned 5 points.");
-} else if (alien_color == 'yellow') {
+} else if (alien_color6== 'yellow') {
     console.log("Congratulations! You just earned 10 points.");
-} else if (alien_color == 'red') {
+} else if (alien_color6 == 'red') {
     console.log("Congratulations! You just earned 15 points.");
 }
-
-//28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
-
-//• If the person is less than 2 years old, print a message that the person is a baby.
-
-//• If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
-
-//      • If the person is at least 4 years old but less than 13, print a message that the person is a kid.
-
-• If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
-
-• If the person is at least 20 years old but less than 65, print a message that the person is an adult.
-
-• If the person is age 65 or older, print a message that the person is an elder.
